@@ -184,6 +184,15 @@ main {
 h3 {
     font-weight: bold;
 }
+span.darkBlue {
+    color: #2568ca;
+}
+span.yellow {
+    color: #dcdcaa;
+}
+span.violet {
+    color: #c586c0;
+}
 pre {
     margin: auto;
     width: 730px;

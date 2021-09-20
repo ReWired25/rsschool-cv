@@ -80,16 +80,16 @@
             </div>
             <pre>
                 <code>
-                function isIsogram (str) {
-                    str = str.toUpperCase();
-                    for ( let i = 0; i &lt; str.length; i++) {
-                        for ( let b = i + 1; b &lt; str.length; b++) {
-                            if (str[i] == str[b]) {
-                            return false;
+                <span class="darkBlue">function</span> <span class="yellow">isIsogram</span> (str) {
+                    str = str.<span class="yellow">toUpperCase</span>();
+                    <span class="violet">for</span> ( <span class="darkBlue">let</span> i = 0; i &lt; str.length; i++) {
+                        <span class="violet">for</span> ( <span class="darkBlue">let</span> b = i + 1; b &lt; str.length; b++) {
+                            <span class="violet">if</span> (str[i] == str[b]) {
+                                <span class="violet">return</span> false;
                                 }
                             }
                         }
-                        return true;
+                        <span class="violet">return</span> true;
                 }
                 </code>
             </pre>
