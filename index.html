@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="icon" href="assets/ico/rewired.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="photo-container">
+                <img class="photo" src="assets/img/photo.jpg" alt="photo">
+            </div>
+            <section class="header-column">
+                <h1>Nikita Kalendarev</h1>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="#about-link">About</a></li>
+                        <li><a href="#education-link">Education</a></li>
+                        <li><a href="#projects-link">Projects</a></li>
+                        <li><a href="#code-link">Code</a></li>
+                        <li><a href="#contacts-link">Contacts</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <div class="column-info">
+                <section class="contacts" id="contacts-link">
+                    <h2>Contact info</h2>
+                    <ul class="column-list">
+                        <li class="phone-item">+7 (929) 550-19-98</li>
+                        <li class="tg-item">@ReWired25</li>
+                        <li class="github-item"><a href="https://github.com/ReWired25">ReWired25</a></li>
+                    </ul>
+                </section>
+                <section class="education" id="education-link">
+                    <h2>Education & courses</h2>
+                    <ul class="column-list">
+                        <li>Code Basics: HTML, CSS, JS</li>
+                        <li>Hexlet: IIP, basic web-development</li>
+                        <li>LoftSchool: OOP, Basic JS</li>
+                        <li>learn.javascript.ru: in process</li>
+                    </ul>
+                </section>
+                <section class="skills">
+                    <h2>Skills</h2>
+                    <ul class="column-list">
+                        <li>HTML, CSS</li>
+                        <li>Basic JS</li>
+                        <li>GIT & GitHub</li>
+                        <li>VS code, Chrome DevTools</li>
+                        <li>Basic photoshop, Figma</li>
+                    </ul>
+                </section>
+                <section class="projects" id="projects-link">
+                    <h2>Projects</h2>
+                    <ul class="column-list">
+                        <li><a href="https://rewired25.github.io/rsschool-cv/">First CV</a></li>
+                        <li><a href="https://rolling-scopes-school.github.io/rewired25-JSFE2021Q3/museum/">Museum</a></li>
+                    </ul>
+                </section>
+                <section class="english">
+                    <h2>English</h2>
+                    <p class="column-list">A2, self-learning (duolinguo, books, streams and videos) and little bit freelance translate (en=>ru). Constantly reading technologies docs on en. Continue to study.</p>
+                </section>
+            </div>
+            <div class="about">
+                <section class="about-info" id="about-link">
+                    <h2 class="about-head">About myself</h2>
+                    <p>My goal is a confident frontend with deep knowledge of JS and web-development.</p>
+                    <br>
+                    <p>Strong skills based on work experience: confident knowledge of a computer device; high skills of self-study and quick problem solving (hardware sphere, freelance); high sociability and involvement in teamwork, constant communication with people (a bright period of work as a bartender).</p>
+                    <br>
+                    <p>I’m currently studying intensively and am trying very hard to become a frontend specialist. I really enjoy it! With each step, there is more and more motivation.</p>
+                </section>
+                <article class="code" id="code-link">
+                    <h2 class="code-head">Code example</h2>
+                    <h3>Kata from codewars: isograms</h3>
+                    <p><em>An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.</em></p>
+                    <pre>
+                        <code class="code-box">
+<!--    -->             <span class="color1">function</span> <span class="color3">isIsogram</span> (str) { -->
+<!--    -->                 str = str.<span class="color3">toUpperCase</span>();
+<!--    -->                 <span class="color2">for</span> ( <span class="color1">let</span> i = 0; i &lt; str.length; i++) {
+<!--    -->                     <span class="color2">for</span> ( <span class="color1">let</span> b = i + 1; b &lt; str.length; b++) {
+<!--    -->                         <span class="color2">if</span> (str[i] == str[b]) {
+<!--    -->                         <span class="color2">return</span> false;
+<!--    -->                         }
+<!--    -->                     }
+<!--    -->                 }
+<!--    -->                 <span class="color2">return</span> true;
+<!--    -->             }
+                        </code>
+                    </pre>
+                </article>
+            </div>
+        </main>
+        <footer>
+            <a class="footer-github" href="https://github.com/ReWired25">GitHub</a>
+            <p>2021</p>
+            <a class="rs-link" href="https://rs.school/js/"></a>
+        </footer>
+    </div>
+</body>
+</html>
