@@ -33,11 +33,11 @@ body {
     box-shadow: 0 0 50px;
     border-radius: 5px;
     overflow: hidden;
+    max-width: 1250px;
 }
 
 header {
     display: flex;
-    /* background: #1a2131; */
     background: #10141f;
     color: #AEE239;
 }
@@ -117,7 +117,6 @@ h1 {
     color: transparent;
     -webkit-background-clip: text;
     text-shadow: 0px 0px 50px rgba(76, 252, 76, 0.35);
-    /* border-bottom: 3px solid rgba(208, 251, 255, 0.07); */
 }
 
 h2 {
@@ -186,7 +185,6 @@ em {
     font-size: 16px;
     line-height: 18px;
     background-color: #1a2131;
-    /* background-color: #10141f; */
     color: #d0fbff;
     overflow: auto;
 }
@@ -214,7 +212,6 @@ span.color3 {
 
 .column-info {
     flex: 1;
-    /* background: #1a2131; */
     background: #10141f;
     color: #C7F464;
 }
@@ -300,7 +297,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background: #1a2131; */
     background: #10141f;
     color: #C7F464;
 }
@@ -325,4 +321,45 @@ footer a {
     background-size: contain;
     width: 100px;
     height: 50px;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        text-align: center;
+    }
+    .about-info, .code {
+        width: 95%;
+    }
+    .column-list {
+        width: 55%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 70px;
+    }
+    .nav-list {
+        display: block;
+        text-align: center;
+        font-size: 17px;
+    }
+    .nav-list li {
+        padding-bottom: 8px;
+    }
+    .column-list {
+        width: 70%;
+    }
+    footer {
+        padding-left: 20px;
+    }
 }
