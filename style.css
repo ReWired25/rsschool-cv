@@ -28,7 +28,7 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    margin: 20px 40px;
+    margin: 20px auto;
     padding: 0;
     box-shadow: 0 0 50px;
     border-radius: 5px;
@@ -360,6 +360,6 @@ footer a {
         width: 70%;
     }
     footer {
-        padding-left: 20px;
+        padding-left: 35px;
     }
 }
